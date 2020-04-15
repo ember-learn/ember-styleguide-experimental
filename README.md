@@ -1,7 +1,7 @@
 ember-styleguide-experimental
 ==============================================================================
 
-[Short description of the addon.]
+Addon for additional ember-styleguide components that are experimental (and not ready for inclusion in ember-styleguide). These components will likely be ones for planned but unrealized projects, like the survey, status board, etc. 
 
 
 Compatibility

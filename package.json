@@ -1,11 +1,11 @@
 {
   "name": "ember-styleguide-experimental",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Additional ember-styleguide components that are not quite ready for inclusion in the primary addon.",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": "https://github.com/ember-learn/ember-styleguide-experimental.git",
   "license": "MIT",
   "author": "",
   "directories": {
