@@ -9,7 +9,7 @@ module.exports = function(environment) {
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
-        // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
+        // e.g. 'with-controller': true
       },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
@@ -44,6 +44,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    // Allow ember-cli-addon-docs to update the rootURL in compiled assets
+    ENV.rootURL = '/';
     // here you can enable a production-specific feature
   }
 

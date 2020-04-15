@@ -1,0 +1,27 @@
+{{#docs-viewer as |viewer|}}
+
+  {{#viewer.nav as |nav|}}
+    {{nav.section "Introduction"}}
+    {{nav.item "This project" "docs.index"}}
+
+    {{nav.section "Layout Components"}}
+    {{nav.item "Aside" "docs.components.es-aside"}}
+
+    {{nav.section "Components"}}
+    {{nav.item "Accordion" "docs.components.es-accordion"}}
+    {{nav.item "Form" "docs.components.es-form"}}
+    {{nav.item "Buttonbar" "docs.components.es-buttonbar"}}
+    {{nav.item "Codesample" "docs.components.es-codesample"}}
+    {{nav.item "Datatable" "docs.components.es-datatable"}}
+    {{nav.item "Search" "docs.components.es-search"}}
+  {{/viewer.nav}}
+
+  {{#viewer.main}}
+    <div class="docs-container">
+      <div class="docs-section">
+        {{outlet}}
+      </div>
+    </div>
+  {{/viewer.main}}
+
+{{/docs-viewer}}

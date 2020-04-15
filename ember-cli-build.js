@@ -1,10 +1,21 @@
 'use strict';
-
+const nodeSass = require('node-sass');
 const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
 module.exports = function(defaults) {
   let app = new EmberAddon(defaults, {
-    // Add options here
+    sassOptions: {
+      implementation: nodeSass
+    },
+    svgJar: {
+      sourceDirs: [
+        'public',
+        'addon/public',
+        'node_modules/ember-styleguide-experimental/public',
+        'node_modules/ember-cli-addon-docs/public',
+        'tests/dummy/public'
+      ]
+    }
   });
 
   /*

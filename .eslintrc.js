@@ -1,14 +1,8 @@
-'use strict';
-
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
   parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module',
-    ecmaFeatures: {
-      legacyDecorators: true
-    }
+    ecmaVersion: 2017,
+    sourceType: 'module'
   },
   plugins: [
     'ember'
@@ -21,13 +15,14 @@ module.exports = {
     browser: true
   },
   rules: {
-    'ember/no-jquery': 'error'
+    'no-useless-escape': 'off'
   },
   overrides: [
     // node files
     {
       files: [
         '.eslintrc.js',
+        '.stylelintrc.js',
         '.template-lintrc.js',
         'ember-cli-build.js',
         'index.js',
@@ -43,7 +38,8 @@ module.exports = {
         'tests/dummy/app/**'
       ],
       parserOptions: {
-        sourceType: 'script'
+        sourceType: 'script',
+        ecmaVersion: 2015
       },
       env: {
         browser: false,
